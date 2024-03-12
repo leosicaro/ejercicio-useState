@@ -38,16 +38,13 @@ function App() {
         // };
         <div>
             <h2>Teacher Name: {name}</h2>
-            {/* Paso 4: Renderizar el formulario */}
             <form onSubmit={changeName}>
-                {/* Paso 4: Renderizar el campo de entrada de texto */}
                 <input
                     type="text"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
                     placeholder="add a name"
                 />
-                {/* Paso 4: Renderizar el botón de envío del formulario */}
                 <button type="submit">Add</button>
             </form>
         </div>
